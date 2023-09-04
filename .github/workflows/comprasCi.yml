@@ -27,6 +27,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Entrando pasta
+      run: cd .\Aula-GitHub-Actions
     - name: Test com maven
       run: mvn clean test site
 
